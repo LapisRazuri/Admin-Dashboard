@@ -43,7 +43,7 @@
 .\30 1ContentMain {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .\30 1ContentMain > div, .announcementsMain, .trendingMain {
@@ -118,8 +118,11 @@ body {
 
 body > div {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main";
 }
 
 
