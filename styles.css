@@ -5,6 +5,23 @@
     font-family: 'Inter', sans-serif;
 }
 
+.bellSide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.searchBar {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    align-content: center;
+    justify-items: stretch;
+}
+
+img {
+    height: 2vh;
+}
+
 .announcementsMain > span {
     padding-top: 30px;
 }
@@ -76,7 +93,7 @@
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
 }
 
-.\30 1ContentHeader {display: grid;grid-template-columns: 1fr 3fr 1fr 1fr 2fr;}
+.\30 1ContentHeader {display: grid;grid-template-columns: 1fr 1fr;justify-content: center;align-content: center;}
 
 
 .Dashboard {
