@@ -5,6 +5,14 @@
     font-family: 'Inter', sans-serif;
 }
 
+.iconsMain > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2/3;
+    justify-items: end;
+    padding: 20px;
+}
+
 .iconsSide {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -64,8 +72,8 @@ img {
 
 .iconsMain {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: end;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
 }
 
 .\30 01ContentMain > div > div {
