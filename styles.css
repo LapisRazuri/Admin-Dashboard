@@ -42,7 +42,7 @@
 
 .\30 1ContentMain {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template: 0.1fr 0.1fr 0.1fr / 0.1fr 0.1fr;
     grid-gap: 10px;
 }
 
@@ -76,7 +76,7 @@
 .\30 1contentSidebar {
     display: grid;
     grid-template-rows: repeat(11, 1fr);
-    height: 60%;
+    height: 40%;
 }
 
 
@@ -92,9 +92,13 @@ body {
     grid-row: 2/5;
     background: lightblue;
     display: grid;
-    grid-template-columns: 1fr 0.1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 1fr;
     padding: 20px;
+    grid-template-areas:
+        "YourProjects Announcements"
+        "01ContentMain 02ContentMain";
+    grid-gap: 10px;
 }
 
 .header {
@@ -107,9 +111,6 @@ body {
 .sidebar {
     grid-row: 1 / 5;
     background: #20c8ff;
-    /* display: grid; */
-    /* grid-template-rows: repeat(10, 1fr); */
-    /* height: 60%; */
     color: white;
     
 }
