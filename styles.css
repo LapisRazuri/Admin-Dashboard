@@ -5,14 +5,51 @@
     font-family: 'Inter', sans-serif;
 }
 
+.trendingMain > div {
+    display: grid;
+    grid-template: minmax(20px, 1fr) / repeat(2, minmax(110px, 1fr));
+}
+
+.announcementsMain > div > span {
+    font-weight: bold;
+}
+
+.\30 1ContentMain > div > p {
+    /* grid-row: 2 / 3; */
+}
+
+.\30 2contentSidebar {
+    display: grid;
+    grid-template: repeat(7, minmax(3%, 0.05fr)) / minmax(135px, 0.1fr);
+    padding-top: 20px;
+}
+
 .paddingB\/W01contentSidebar {
-    padding-top: 50px !important;
+    padding-top: 90px !important;
 }
 
 .\30 1contentSidebar > div {
     display: grid;
-    grid-template-columns: 0.1fr 1fr;
+    grid-template: minmax(30px, 1fr) / minmax(20px, 0.1fr) minmax(50px, 1fr);
+    padding: 8px;
+}
+
+.sidebar > div {
+    \30 1contentSidebar > div {
+    display: grid;
+    grid-template: minmax(60px, 0.1fr) / minmax(20px, 0.1fr) minmax(50px, 1fr);
     padding: 20px;
+};
+    \30 1contentSidebar > div {
+    display: grid;
+    grid-template: minmax(60px, 0.1fr) / minmax(20px, 0.1fr) minmax(50px, 1fr);
+    padding: 20px;
+};
+}
+
+.\30 1contentSidebar {
+    display: grid;
+    grid-template: repeat(10, minmax(3%, 0.05fr)) / minmax(135px, 0.1fr);
 }
 
 .\30 1contentSidebar > div > img {
@@ -25,44 +62,46 @@
 
 .iconsMain > div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template: minmax(20px, 1fr) / repeat(3, 1fr);
     grid-column: 2/3;
     justify-items: end;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .iconsSide {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template: 0.1fr / repeat(3, minmax(calc(330px / 3), 1fr));
     justify-items: center;
 }
 
 .profileIconSide {
     display: grid;
-    grid-template-columns: 0.1fr 1fr;
+    grid-template: 0.1fr / minmax(calc(330px * 1 / 3), 0.1fr) minmax(calc(330px * 2 / 3), 1fr);
     align-content: center;
     justify-items: start;
 }
 
 .bellSide {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template: minmax(30px, 0.1fr) / repeat(3, minmax(calc(330px / 3), 1fr));
     justify-items: center;
 }
 
 .searchBar {
     display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    align-content: center;
+    grid-template: minmax(30px, 0.1fr) / minmax(20px, 0.1fr) minmax(200px, 1fr);
     justify-items: stretch;
+    align-content: center;
 }
+
+grid-template-rows {}
 
 img {
     height: 2vh;
 }
 
 .announcementsMain > span {
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .announcementsMain > p {
@@ -72,26 +111,27 @@ img {
 
 .\30 2ContentMain {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template: minmax(450px, 0.5fr) minmax(100px, 0.5fr)/ minmax(220px, 1fr);
+    grid-gap: 20px;
     font-size: 0.9rem;
 }
 
 .trendingMain {
     display: grid;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template: repeat(4, minmax(20px, 1fr)) / minmax(220px, 1fr);
 }
 
 .announcementsMain {
     display: grid;
-    grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+    grid-template: minmax(110px, 1fr) minmax(110px, 1fr) minmax(110px, 1fr) / minmax(200px, 1fr);
     grid-gap: 10px;
 }
 
 .iconsMain {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template: minmax(7px, 0.05fr) / repeat(2, 1fr);
     justify-items: stretch;
+    /* grid-row: 3 / 4; */
 }
 
 .\30 01ContentMain > div > div {
@@ -103,28 +143,26 @@ img {
 .headingsMain {
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 .\30 1ContentMain {
     display: grid;
-    grid-template: 0.1fr 0.1fr 0.1fr / 0.1fr 0.1fr;
-    grid-gap: 10px;
+    grid-template: repeat(3, minmax(214px, 0.2fr))/ repeat(2, minmax(370px, 1fr));
+    grid-gap: 20px;
+    overflow: hidden;
 }
 
 .\30 1ContentMain > div, .announcementsMain, .trendingMain {
     background: white;
     border-radius: 5%;
-    padding: 20px;
+    padding: 12px;
     box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 .\30 1ContentMain > div {
-    width: 400px;
-    /* height: 100%; */
-    /* min-height: max-content; */
     display: grid;
-    grid-template-rows: 0.1fr 1fr 0.1fr;
+    grid-template: minmax(20px, 0.1fr) minmax(50px, 1fr) minmax(20px, 0.1fr) / minmax(100px, 1fr);
 }
 
 .\30 2ContentHeader {
@@ -134,22 +172,17 @@ img {
     justify-content: center;
 }
 
-.\30 1ContentHeader {display: grid;grid-template-columns: 1fr 1fr;justify-content: center;align-content: center;}
+.\30 1ContentHeader {display: grid;grid-template: minmax(calc(130px - 90px), 0.1fr) / repeat(2, minmax(300px, 1fr));justify-content: center;align-content: center;}
 
 
 .Dashboard {
     font-size: 1.3rem;
 }
 
-.\30 1contentSidebar {
-    height: 40%;
-}
 
 
 
-body {
-    height: 100%;
-}
+body {display: grid;grid-template: 100vh / 100vw;overflow: hidden;}
 
 
 
@@ -158,37 +191,35 @@ body {
     grid-row: 2/5;
     background: lightblue;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template: minmax(28px, 0.1fr) minmax(898px, 1fr) / minmax(452px, 8fr) minmax(200px, 2fr);
     padding: 20px;
     grid-template-areas:
         "YourProjects Announcements"
         "01ContentMain 02ContentMain";
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .header {
     grid-column: 2 / 4;
     background: white;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    padding: 20px;
+    grid-template: repeat(2, minmax(calc(130px - 90px),1fr)) / minmax(620px, 1fr);
+    padding: 10px;
 }
 
 .sidebar {
     grid-row: 1 / 5;
     background: #20c8ff;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    align-content: space-around;
+    grid-template: minmax(100vh, 1fr) / minmax(135px, 0.1fr);
 }
 
  
 
 body > div {
     display: grid;
-    grid-template-columns: 0.1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: minmax(150px, 0.1fr) minmax(1024px, 1fr);
+    grid-template-rows: minmax(100px, 0.1fr) minmax(calc(100vh - 100px), 1fr);
     grid-template-areas:
         "sidebar header"
         "sidebar main";
@@ -204,8 +235,9 @@ button {
     padding: 5px;
 }
 
-span {
+.\30 1ContentMain > div > span {
     font-weight: bold;
+    /* grid-row: 1 / 2; */
 }
 
 
