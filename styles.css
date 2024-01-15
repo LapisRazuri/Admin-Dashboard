@@ -189,7 +189,7 @@ body {display: grid;grid-template: 100vh / 100vw;overflow: hidden;}
 .main {
     grid-column: 2/4;
     grid-row: 2/5;
-    background: lightblue;
+    background: whitesmoke;
     display: grid;
     grid-template: minmax(28px, 0.1fr) minmax(898px, 1fr) / minmax(452px, 8fr) minmax(200px, 2fr);
     padding: 20px;
@@ -201,7 +201,7 @@ body {display: grid;grid-template: 100vh / 100vw;overflow: hidden;}
 
 .header {
     grid-column: 2 / 4;
-    background: white;
+    background: floralwhite;
     display: grid;
     grid-template: repeat(2, minmax(calc(130px - 90px),1fr)) / minmax(620px, 1fr);
     padding: 10px;
@@ -209,7 +209,7 @@ body {display: grid;grid-template: 100vh / 100vw;overflow: hidden;}
 
 .sidebar {
     grid-row: 1 / 5;
-    background: #20c8ff;
+    background: antiquewhite;
     display: grid;
     grid-template: minmax(100vh, 1fr) / minmax(135px, 0.1fr);
 }
@@ -227,12 +227,11 @@ body > div {
 
 
 button {
-    background: #20c8ff;
     width: max-content;
     border-radius: 25%;
-    color: white;
     height: max-content;
     padding: 5px;
+    background: darkgrey;
 }
 
 .\30 1ContentMain > div > span {
